@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="logo-scroll"></div>
+	<header class="video-header container">
+		<div class="fs-video-wrapper">
+			<video src="keyboard-bg.mov" autoplay="true" loop="true" muted="true"></video>
+		</div>
+		<div class="overlay"></div>
+		<div id="blank" class="nav-bar">			
+			<nav id="navbar" class="navbar">
+				<a id="logo" class="animated bounceInLeft delay-3s" href="#navbar">B. Samuel</a>
+				<ul>
+					<a class="nav-link animated bounceInDown delay-1-5s" id="s-portofolio" href="#portofolio">
+						<li>Portofolio</li>
+					</a>
+					<a class="nav-link animated bounceInDown delay-1-75s" id="s-services" href="#services">
+						<li>Services</li>
+					</a>
+					<a class="nav-link animated bounceInDown delay-2s" href="">
+						<li>About Me</li>
+					</a>
+					<a class="nav-link animated bounceInDown delay-2-25s" href="">
+						<li>Contact</li>
+					</a>					
+				</ul>	
+			</nav>
+		</div>
+		<span id="header-content" class="header-content">
+			<h1 class="inline animated bounceInLeft delay-0-25s">Hi!&nbsp;</h1><h1 class="inline animated bounceInRight delay-0-5s"> I'm <span class="orange-text">Samuel</span>.</h1>
+			<div></div>
+			<h3 class="inline animated bounceInLeft delay-0-75s">Front-End&nbsp;</h3><h3 class="inline animated bounceInRight delay-1s"><span class="orange-text">Developer</span></h3>
+			<div></div>
+			<a href="#portofolio" id="button" class="button inline animated bounceIn delay-1-25s">Find Out More</a>
+		</span>
+	</header>
+	<main>
+	 <section id="portofolio" class="section portofolio">
+	 	<div class="portofolio-text">
+	 	<h1>Here are some of my projects..</h1>
+	 	<p>Here are some of my projects..</p>
+	 	</div>
+		<div class="grid">
+			<ul id="grid">
+				<li>
+					<a href="" class="grid-cell">
+						<img src="./img/tribute-page.png" alt="" class="grid-img">
+						<span class="grid-overlay"></span>
+						<span class="grid-text">Tribute Page</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="grid-cell">
+						<img src="./img/survey-form.png" alt="" class="grid-img">
+						<span class="grid-overlay"></span>
+						<span class="grid-text">Survey Form</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="grid-cell">
+						<img src="./img/product-landing-page.png" alt="" class="grid-img">
+						<span class="grid-overlay"></span>
+						<span class="grid-text">Product Landing Page</span>
+					</a>
+				</li>	
+				<li>
+					<a href="" class="grid-cell">
+						<img src="./img/technical-documentation-page.png" alt="" class="grid-img">
+						<span class="grid-overlay"></span>
+						<span class="grid-text">Technical Documentation Page</span>
+					</a>
+				</li>											
+			</ul>
+		</div>
+  	</section>
+
+  <section id="services" class="section services">
+  	<div class="grid-container">
+		<div class="grid-item">
+			<div class="grid-img item1">
+				<img src="./img/eye.svg" alt="">
+			</div>
+				<h2>Website Accesibility</h2>
+		Responsive websites for every type of device (phone, tablet, laptop, big screens etc.) and accesibility from all browsers even older versions.</div>
+		<div class="grid-item">
+			<div class="grid-img item2">
+				<img src="./img/gear.svg" alt=""></div>
+				<h2>High Performance</h2>
+		The design is important, but the performance and speed are also. You'll enjoy a website with a coherent functionality, high performance, and fast loadings.</div>
+		<div class="grid-item item3">
+			<div class="grid-img">
+				<img src="./img/magic-wand.svg" alt=""></div>
+				<h2>Visual Effects</h2>
+		Great websites have great visual effect. Your website will benefit of impressive visual effects that will catch the attention of every visitor.</div>
+	</div>
+  </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+// nav bar background change on scroll
+
+$(document).ready(function(){
+$(window).on("scroll",function(){
+  	var wn = $(window).scrollTop();
+    if(wn >= 200){
+    	$(".nav-bar").css("background","rgba(26, 5, 58, 1)");
+    }
+   	else {
+    	$(".nav-bar").css("background","rgba(0,0,0,0)");
+    }
+  });
+});
+
+// nav bar animation on scroll
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+        $(".nav-bar").addClass("animated fadeInDown");
+    } 
+    else {
+    	$(".nav-bar").removeClass("animated fadeInDown")
+    }
+
+});
+
+// portofolio animation on scroll
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".portofolio-text").addClass("animated bounceInRight");
+    }
+    else {
+    	$(".portofolio-text").removeClass("animated bounceInRight")
+    } 
+    if (scroll >= 200) {
+        $(".grid").addClass("animated bounceInLeft");
+    } 
+    else {
+    	$(".grid").removeClass("animated bounceInLeft")
+    }   
+});  	
+
+//scroll effect
+
+$("#button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#portofolio").offset().top
+    }, 300);
+
+})
+
+$("#logo").click(function() {
+     $('html, body').animate({
+        scrollTop: $("#logo-scroll").offset().top
+    }, 300);
+})
+
+$("#s-portofolio").click(function() {
+     $('html, body').animate({
+        scrollTop: $("#portofolio").offset().top
+    }, 300);
+})
+
+$("#s-services").click(function() {
+     $('html, body').animate({
+        scrollTop: $("#services").offset().top
+    }, 300);
+})
+
+</script>
+
+</body>
+</html>
