@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-	max-width: 100vw;
+	max-width: 100%;
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
@@ -45,8 +45,8 @@ body {
 }
 
 .fs-video-wrap video {
-	min-height: 100%;
-	min-width: 100%;
+	max-height: 100vh;
+	max-width: 100vw;
 }
 
 .overlay {
@@ -118,6 +118,7 @@ body {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 
 .nav-bar #logo {
 	float: left;
@@ -333,11 +334,71 @@ body {
 	background-color: #4d4dbc;
 	color: #FFFFFF;
 	border-radius: 1000px;
-	cursor: pointer;
 	transition: .5s;
 }
 
 .grid-item h2:hover{
 	background-color: #FFFFFF; 
 	color: #4d4dbc;
+}
+
+
+/* Contact */ 
+
+.contact-text {
+	text-align: center;
+	margin: 100px 0;
+}
+
+.contact-text h1 {
+	font-size: 50px;
+}
+
+
+.fab, .fas {
+	font-size: 100px;
+	color: rgba(26, 5, 58, 1);
+	transition: .5s;
+}
+
+.social-links {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	text-align: center;
+}
+
+@media(max-width: 800px) {
+	.social-links {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
+
+.fa-facebook-square:hover {
+	color: #3b5998;	
+}
+
+.fa-twitter-square:hover {
+	color: #1DA1F2;
+}
+
+.fa-linkedin:hover {
+	color: #0077B5;
+}
+
+.fa-github-square:hover {
+	color: #000000;
+}
+
+.fa-envelope-square:hover {
+	color: #FF0000;
+}
+
+.fa-phone-square:hover {
+	color: #02D702;
+}
+
+footer {
+	background-color: rgba(26, 5, 58, 1);
+	color: #FFFFFF;
+	text-align: center;
 }
