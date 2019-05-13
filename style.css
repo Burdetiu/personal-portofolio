@@ -1,404 +1,209 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Play|Roboto+Condensed');
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+	<div id="logo-scroll"></div>
+	<header class="video-header container">
+		<div class="fs-video-wrapper">
+			<video src="keyboard-bg.mov" autoplay="true" loop="true" muted="true"></video>
+		</div>
+		<div class="overlay"></div>
+		<div id="blank" class="nav-bar">			
+			<nav id="navbar" class="navbar">
+				<a id="logo" class="animated bounceInLeft delay-2-25s" href="#navbar">B. Samuel</a>
+				<ul>
+					<a class="nav-link animated bounceInDown delay-1-5s" id="s-portofolio" href="#portofolio">
+						<li>Portofolio</li>
+					</a>
+					<a class="nav-link animated bounceInDown delay-1-75s" id="s-services" href="#services">
+						<li>Services</li>
+					</a>
+					<a class="nav-link animated bounceInDown delay-2s" id="s-contact" href="#contact">
+						<li>Contact</li>
+					</a>					
+				</ul>	
+			</nav>
+		</div>
+		<span id="header-content" class="header-content">
+			<h1 class="inline animated bounceInLeft delay-0-25s">Hi!&nbsp;</h1><h1 class="inline animated bounceInRight delay-0-5s"> I'm <span class="orange-text">Samuel</span>.</h1>
+			<div></div>
+			<h3 class="inline animated bounceInLeft delay-0-75s">Front-End&nbsp;</h3><h3 class="inline animated bounceInRight delay-1s"><span class="orange-text">Developer</span></h3>
+			<div></div>
+			<a href="#portofolio" id="button" class="button inline animated bounceIn delay-1-25s">Find Out More</a>
+		</span>
+	</header>
+	<main>
+	 <section id="portofolio" class="section portofolio">
+	 	<div class="portofolio-text">
+	 	<h1>Here are some of my projects..</h1>
+	 	<p>Here are some of my projects..</p>
+	 	</div>
+		<div class="grid">
+			<ul id="grid">
+				<li>
+					<a href="https://burdetiu.github.io/Tribute-Page/" target="_blank" class="grid-cell">
+						<img src="./img/tribute-page.png" alt="" class="grid-img">
+						<span class="grid-overlay"></span>
+						<span class="grid-text">Tribute Page</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://burdetiu.github.io/survey-form/" target="_blank" class="grid-cell">
+						<img src="./img/survey-form.png" alt="" class="grid-img">
+						<span class="grid-overlay"></span>
+						<span class="grid-text">Survey Form</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://burdetiu.github.io/landing-page/" target="_blank" class="grid-cell">
+						<img src="./img/product-landing-page.png" alt="" class="grid-img">
+						<span class="grid-overlay"></span>
+						<span class="grid-text">Product Landing Page</span>
+					</a>
+				</li>	
+				<li>
+					<a href="https://burdetiu.github.io/technical-documentation-page/" target="_blank" class="grid-cell">
+						<img src="./img/technical-documentation-page.png" alt="" class="grid-img">
+						<span class="grid-overlay"></span>
+						<span class="grid-text">Technical Documentation Page</span>
+					</a>
+				</li>											
+			</ul>
+		</div>
+  	</section>
 
-* {
-	box-sizing: border-box;
-	scroll-behavior: smooth ;
-}
+  <section id="services" class="section services">
+  	<div class="grid-container">
+		<div class="grid-item">
+			<div class="grid-img item1">
+				<img src="./img/eye.svg" alt="">
+			</div>
+				<h2>Website Accesibility</h2>
+		Responsive websites for every type of device (phone, tablet, laptop, big screens etc.) and accesibility from all browsers even older versions.</div>
+		<div class="grid-item">
+			<div class="grid-img item2">
+				<img src="./img/gear.svg" alt=""></div>
+				<h2>High Performance</h2>
+		The design is important, but the performance and speed are also. You'll enjoy a website with a coherent functionality, high performance, and fast loadings.</div>
+		<div class="grid-item item3">
+			<div class="grid-img">
+				<img src="./img/magic-wand.svg" alt=""></div>
+				<h2>Visual Effects</h2>
+		Great websites have great visual effect. Your website will benefit of impressive visual effects that will catch the attention of every visitor.</div>
+	</div>
+  </section>
+  <section id="contact" class="section services">
+  	<div class="contact-text">
+  	<h1>Interested in working <u>together</u>?</h1>
+  	<h2>Contact me with any of the options below.</h2>
+  	</div>
+  	<div class="social-links">
+  		<div class="social facebook"><a href="https://www.facebook.com/people/Burdetiu-Samy/100010066744600" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+  		<div class="social twitter"><a href="https://twitter.com/BSamy97" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
+		<div class="social linked-in"><a href="https://www.linkedin.com/in/samuel-burdetiu-936297171/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+		<div class="social github"><a href="https://github.com/Burdetiu" target="_blank"><i class="fab fa-github-square"></i></a></div>
+		<div class="social email"><a href="mailto:gabyburdetiu@gmail.com"><i class="fas fa-envelope-square"></i></a></div>
+		<div class="social phone"><a href="tel:+34 643 841 810"><i class="fas fa-phone-square"></i></a></div>
+  	</div>
+  </section>
+</main>
+<footer>
+	<div>Some icons are made by <a href="https://www.freepik.com/" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		target="_blank"	    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		target="_blank"	    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	<span>Created by <a href="">Burdetiu Samuel</a>
+</footer>
 
-body {
-	margin: 0;
-	font-family: 'PT Sans' ,'Play', 'Open Sans', 'Roboto Condensed', sans-serif;	
-	line-height: 1.5;
-	font-size: 1rem;
-	font-weight: normal;
-	overflow-x: hidden;
-}
+  <script type="text/javascript">
 
-.inline {
-	display: inline-block;
-}
-.inline1 {
-	display: inline;
-}
+// nav bar background change on scroll
 
-.video-header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	color: #FFFFFF;
-}
-
-.container {
-	max-width: 100%;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
-.fs-video-wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-}
-
-.fs-video-wrap video {
-	max-height: 100vh;
-	max-width: 100vw;
-}
-
-.overlay {
-	position: absolute;
-	height: 100vh;
-	width: 100vw;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	background-color: #7C4DFF;
-	opacity: .25;
-}
-
-#bg-white {
-	background: #FFF;
-	color: rgba(26, 5, 58, 1);
-}
-
-.nav-bar {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 5;
-	text-align: right;
-	background-color: transparent;
-	transition: .5s;
-}
-
-.logo {
-	
-}
-
-.nav-bar a li {
-	list-style: none;
-}
-
-.nav-bar a {
-	text-decoration: none;
-	font-size: 1.2rem;
-	position: relative;
-	color: #FFFFFF;
-	display: inline-block;
-	padding: 0;	
-	margin-right: 30px;
-}
-
-.nav-bar a:hover {
-	transition: .5s;
-	color: #FFAA00;
-}
-
-.nav-bar a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FFAA00;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
-  transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
-}
-
-.nav-bar a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-
-.nav-bar #logo {
-	float: left;
-	margin-left: 20px;
-
-}
-
-.header-content {
-	z-index: 2;
-	text-align: center;
-	display: block;
-}
-
-.header-content h1 {
-	font-size: 50px;
-	margin-bottom: 0;
-}
-
-.header-content h3 {
-	font-size: 1.5rem;
-	padding-bottom: 2rem;
-}
-
-.orange-text {
-	color: #FFAA00;
-	opacity: ;
-}
-
-.button {
-	background: transparent;
-	color: #FFFFFF;
-	font-size: 1.3rem;
-	padding: 1rem 2rem;
-	text-decoration: none;
-	text-transform: uppercase;
-	border: 3px solid #FFFFFF;
-	border-radius: 2px;
-	transition: .5s;
-	border-radius: 1000px;
-}
-
-.button:hover {
-	border-color: #FFAA00;
-	color: #FFAA00;
-}
-
-.section{
-	padding:20px 0;
-	min-height: 680px;
-	max-width: 100vw;
-	height: 100%;
-
-}
-
-
-/* PORTOFOLIO */
-
-
-.portofolio h1 {
-	font-size: 2em;
-	text-align: center;
-	margin-top: 70px;
-	margin-bottom: 110px; 
-}
-.portofolio p {
-	text-align: center;
-	font-size: 25px;
-	display: none;
-}
-
-#grid {
-	max-width: 1200px;
-	max-height: 250px;
-	margin: 0 auto;
-	padding: 0;
-	font-size: 0px;
-	list-style: none;
-	background: #fff;
-}
-
-#grid li {
-	display: inline-block;
-	*display:inline;
-	width: 25%;
-	vertical-align: middle;
-	box-sizing: border-box;
-	margin: 0;
-	margin-top: -20px;
-	padding: 0;
-}
-
-.grid-cell {
-	margin: 12px;
-	box-shadow:0 0 6px rgba(0,0,0,0.3);
-	display: block;
-	position: relative;
-	overflow: hidden;
-}
-
-.grid-img {
-    display:block;
-    width: 100%;
-    height: 230px;
-    border:none;
-    transform:scale(1);
-    transition:all 1s;
-}
-
-#grid li:hover .grid-img {
-    transform:scale(1.05);
-}
-        
-.grid-overlay {
-    position:  absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: rgba(124, 77, 255, .7) url(img/see-more.png) no-repeat center 20%;
-    background-size: 50px 50px;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    transition: all 0.6s;
-}
-#grid li:hover .grid-overlay {
-    opacity:0.8;
-}
-
-.grid-text {
-    display: block;
-    padding: 0 30px;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal!important;
-    top: 40%;
-    color: white;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    transform: translateY(-20px);
-    transition: all .3s;
-}
-#grid li:hover .grid-text {
-    transform: translateY(0px);
-    opacity: 0.9;
-}
-
-@media (max-width: 9000px) {
-    #grid li {
-        width:25%;
+$(document).ready(function(){
+$(window).on("scroll",function(){
+  	var wn = $(window).scrollTop();
+    if(wn >= 200){
+    	$(".nav-bar").css("background","rgba(26, 5, 58, 1)");
     }
-}
-
-@media (max-width: 700px) {
-    #grid li {
-        width:33.33%;
+   	else {
+    	$(".nav-bar").css("background","rgba(0,0,0,0)");
     }
-   .portofolio h1 {
-		margin-bottom: 20px;
-		margin-top: -20px;
-}
-}
+  });
+});
 
-@media (max-width: 550px) {
-    #grid li {
-        width:50%;
+// nav bar animation on scroll
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+        $(".nav-bar").addClass("animated fadeInDown");
+    } 
+    else {
+    	$(".nav-bar").removeClass("animated fadeInDown")
     }
-   .portofolio h1 {
-		display: none;
-}
-	.portofolio p {
-		display: block;
-	}
-}
 
+});
 
-/* Services */
+// portofolio animation on scroll
 
-.services {
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
 
-}
+    if (scroll >= 100) {
+        $(".portofolio-text").addClass("animated bounceInRight");
+    }
+    else {
+    	$(".portofolio-text").removeClass("animated bounceInRight")
+    } 
+    if (scroll >= 200) {
+        $(".grid").addClass("animated bounceInLeft");
+    } 
+    else {
+    	$(".grid").removeClass("animated bounceInLeft")
+    }   
+});  	
 
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	padding: 10px;
-	margin-top: 100px;
-	grid-column-gap: 20px;
-	color: #4d4dbc;
-}
+//scroll effect
 
-.grid-item {
-	padding: 20px;
-	font-size: 20px;
-	text-align: center;
-}
+$("#button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#portofolio").offset().top
+    }, 300);
 
-.grid-img img{
-	max-width: 200px;
-	height: auto;
-}
+})
 
-.grid-item h2 {
-	margin-top: 0px;
-	background-color: #4d4dbc;
-	color: #FFFFFF;
-	border-radius: 1000px;
-	transition: .5s;
-}
+$("#logo").click(function() {
+     $('html, body').animate({
+        scrollTop: $("#logo-scroll").offset().top
+    }, 300);
+})
 
-.grid-item h2:hover{
-	background-color: #FFFFFF; 
-	color: #4d4dbc;
-}
+$("#s-portofolio").click(function() {
+     $('html, body').animate({
+        scrollTop: $("#portofolio").offset().top
+    }, 300);
+})
 
+$("#s-services").click(function() {
+     $('html, body').animate({
+        scrollTop: $("#services").offset().top
+    }, 300);
+})
 
-/* Contact */ 
+$("#s-contact").click(function() {
+     $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 300);
+})
 
-.contact-text {
-	text-align: center;
-	margin: 100px 0;
-}
+</script>
 
-.contact-text h1 {
-	font-size: 50px;
-}
-
-
-.fab, .fas {
-	font-size: 100px;
-	color: rgba(26, 5, 58, 1);
-	transition: .5s;
-}
-
-.social-links {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	text-align: center;
-}
-
-@media(max-width: 800px) {
-	.social-links {
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	}
-}
-
-.fa-facebook-square:hover {
-	color: #3b5998;	
-}
-
-.fa-twitter-square:hover {
-	color: #1DA1F2;
-}
-
-.fa-linkedin:hover {
-	color: #0077B5;
-}
-
-.fa-github-square:hover {
-	color: #000000;
-}
-
-.fa-envelope-square:hover {
-	color: #FF0000;
-}
-
-.fa-phone-square:hover {
-	color: #02D702;
-}
-
-footer {
-	background-color: rgba(26, 5, 58, 1);
-	color: #FFFFFF;
-	text-align: center;
-}
+</body>
+</html>
